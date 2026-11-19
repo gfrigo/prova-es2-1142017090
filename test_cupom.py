@@ -32,3 +32,14 @@ def test_rf03_percentual_zero_e_rejeitado():
 
     # Verificar
     assert resultado is False
+
+
+def test_rf04_percentual_19_5_nao_inteiro_e_rejeitado():
+    # Preparar
+    percentual = 19.5
+
+    # Agir
+    resultado = desconto_valido(percentual)
+
+    # Verificar
+    assert resultado is False
